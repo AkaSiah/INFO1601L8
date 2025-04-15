@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #e6ecf0;
+  }
+  
+  .container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    height: 100vh;
+    border-right: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+  }
+  
+  .sidebar h2 {
+    color: #1da1f2;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar nav a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin: 10px 0;
+  }
+  
+  .sidebar .tweet-btn {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background: #1da1f2;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .feed {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .tweet-box {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+    align-items: flex-start;
+  }
+  
+  .tweet-box textarea {
+    flex: 1;
+    resize: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    height: 80px;
+  }
+  
+  .tweet-box button {
+    background: #1da1f2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .tweet {
+    background: white;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+  
+  .tweet-content h4 {
+    margin-bottom: 5px;
+  }
+  
+  .tweet-content span {
+    color: gray;
+    font-size: 14px;
+  }
+  
+  .tweet-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .tweet-buttons button {
+    background: none;
+    border: none;
+    color: #555;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .tweet-buttons button:hover {
+    color: #1da1f2;
+  }
+  
+  .tweet-buttons .liked {
+    color: #e0245e;
+    font-weight: bold;
+  }
+
+  .tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .tabs button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background: #ddd;
+    font-weight: bold;
+  }
+  
+  .tabs button:hover {
+    background: #1da1f2;
+    color: white;
+  }
+  
+  .edit-btn, .delete-btn {
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .edit-btn:hover, .delete-btn:hover {
+    color: #1da1f2;
+  }
+
+  .follow-btn {
+    background: #1da1f2;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .follow-btn:hover {
+    background: #0d8ddb;
+  }
+
+  .sidebar ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar button {
+    border: none;
+    background: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: #1da1f2;
+  }
+  
+  .sidebar button:hover {
+    text-decoration: underline;
+  }
+
+  .comment {
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-left: 2px solid #ccc;
+    font-size: 0.9em;
+  }
+  .comment-box textarea {
+    margin-top: 5px;
+  }

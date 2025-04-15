@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Twitter Clone</title>
+  <link rel="stylesheet" href="mainstyle.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Users</h2>
+      <ul id="user-list">
+        <!-- Users loaded dynamically here -->
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1>Twitter Clone</h1>
+      </header>
+
+      <section class="tweet-box">
+        <textarea placeholder="What's happening?"></textarea>
+        <button>Tweet</button>
+      </section>
+
+      <section class="tabs">
+        <button onclick="showAll()">All Tweets</button>
+        <button onclick="showFavorites()">Favorites</button>
+      </section>
+
+      <section class="feed">
+        <!-- Tweets will be rendered here -->
+      </section>
+    </main>
+  </div>
+
+  <script src="mainscript.js"></script>
+</body>
+</html>
